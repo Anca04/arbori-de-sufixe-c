@@ -1,0 +1,27 @@
+Pentru prima cerinta am construit arborele de sufixe. Mai intai, am implementat
+o functie de initializare care aloca spatiu pentru nodurile copii. Apoi, am
+creat functia de inserare a sufixelor, extrag din fiecare cuvant sufixele,
+parcurg sufixele litera cu litera si verific daca au fost deja inserate, adica
+daca am alocat deja spatiu pentru ele. Afisarea o fac prin implementarea unei
+parcurgeri in latime. Acest lucru il fac cu ajutorul unei cozi in care adaug,
+apoi afisez $ sau litera corespunzatoare indexului.
+
+Pentru cerinta 2 m-am folosit de cerinta 1, iar in functia insert am calculat
+numarul de sufixe de dimensiune K, cu ajutorul unei varibile de tip boolean pe
+care am introdus-o in structura. Numarul de noduri frunza il calculez
+asemanator cu parcurgerea in latime, adica ma folosesc din nou de o coada, iar
+in loc de afisare, cresc numarul de noduri frunza din arbore. Pentru numarul
+maxim de descendenti directi am implementat o functie care parcurge arborele si
+creste numarul descendentilor directi.
+
+Pentru cerinta 3, am implementat o functie de search in care parcurg in functie
+de indexul sufixului si verific daca se afla sau nu in arbore. Am luat o
+variabila in care retin daca sufixul se afla sau nu in arbore. Testez daca am
+alocat spatiu sau nu pentru nodurile copii, iar in functie de asta verific daca
+sufixul exista sau nu.
+
+In main, am implementat conform enuntului pentru a putea rula cu argumentele
+respective. Am initializat arborele si primul copil($), apoi apelez functiile
+specifice fiecarei cerinte.
+
+Am obtinut 70 de puncte in total, iar la bonus 2.
